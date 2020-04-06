@@ -19,7 +19,4 @@ export default makeStyles(theme => ({
       color: theme.palette.grey[600],
     },
   },
-  media: {
-    height: 390,
-  }
 }));

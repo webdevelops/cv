@@ -3,6 +3,9 @@ import { Card, CardActionArea, Link, CardHeader, CardContent, Typography, CardMe
 import PropTypes from 'prop-types';
 
 import useStyles from './styles';
+// import lawyer from './img/lawyer.jpg';
+// import quiz from './img/quiz.jpg';
+// import store from './img/store.jpg';
 
 export default function ProjectCard(props) {
   const { title, description, url, image, techList, linkSource } = props;
@@ -30,9 +33,10 @@ export default function ProjectCard(props) {
             <CardMedia
               component="img"
               src={image}
+              // src={lawyer}
               alt={title}
-              className={classes.media}
             />
+            {/* <img src={image} alt={title}/> */}
           </Link>
         </CardActionArea>
         <CardContent>
