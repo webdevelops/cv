@@ -9,6 +9,9 @@ export default makeStyles(theme => ({
     },
     display: 'flex',
     alignItems: 'center',
+    width: '100%',
+    maxWidth: 855,
+      margin: '0 auto',
     '& img': {
       width: '100%',
     },
