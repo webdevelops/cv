@@ -2,18 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
-import quizs from './quiz.jpg';
-// import image from './quiz.jpg';
+import Spinner from '../../../components/Spinner';
+import image from './quiz.jpg';
 
 export default function Quiz({ quiz }) {
+  if (!image) {
+    return <Spinner />;
+  }
+
   return (
     <ProjectCard 
       title={quiz.title}
       description={quiz.description}
       url={quiz.url}
-      // image={quiz.image}
-      image={quizs}
-      // image={image}
+      image={image}
       techList={quiz.techList}
     />
   );
