@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
-import image from './lawyer.jpg';
+import lawyers from './lawyer.jpg';
+import quizs from '../Quiz/quiz.jpg';
+// import quizs from '../Quiz/quiz';
+// import image from './lawyer.jpg';
 
 export default function Lawyer({ lawyer }) {
   return (
@@ -11,7 +14,8 @@ export default function Lawyer({ lawyer }) {
       description={lawyer.description}
       url={lawyer.url}
       // image={lawyer.image}
-      image={image}
+      image={lawyers}
+      // image={image}
       techList={lawyer.techList}
     />
   );
