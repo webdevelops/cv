@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
-import Spinner from '../../../components/Spinner';
 import image from './quiz.jpg';
+import Spinner from '../../../components/Spinner';
 
 export default function Quiz({ quiz }) {
   if (!image) {
-    return <Spinner />;
+    return <Spinner />
   }
 
   return (
@@ -22,5 +22,5 @@ export default function Quiz({ quiz }) {
 }
 
 Quiz.propTypes = {
-  store: PropTypes.objectOf(PropTypes.object)
+  quiz: PropTypes.object
 };
