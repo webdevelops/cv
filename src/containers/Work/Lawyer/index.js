@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
 import image from './lawyer.jpg';
-import Spinner from '../../../components/Spinner';
+// import Spinner from '../../../components/Spinner';
 
 export default function Lawyer({ lawyer }) {
-  if (!image) {
-    return <Spinner />
-  }
+  // if (!image) {
+  //   return <Spinner />
+  // }
 
   return (
     <ProjectCard

@@ -3,6 +3,7 @@ import { Card, CardActionArea, Link, CardHeader, CardContent, Typography, CardMe
 import PropTypes from 'prop-types';
 
 import useStyles from './styles';
+import Spinner from '../Spinner/index';
 
 export default function ProjectCard(props) {
   const { title, description, url, image, techList, linkSource } = props;
@@ -17,6 +18,10 @@ export default function ProjectCard(props) {
       );
     })
   );
+
+  if (!image) {
+    return <Spinner />
+  }
 
   return (
     <div className={classes.root}>

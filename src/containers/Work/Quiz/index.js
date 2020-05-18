@@ -3,12 +3,17 @@ import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
 import image from './quiz.jpg';
-import Spinner from '../../../components/Spinner';
+// import { makeStyles } from '@material-ui/core';
+// import Spinner from '../../../components/Spinner';
+
+// const useStyles = makeStyles({
+//   media: {
+//     width: 400,
+//   },
+// });
 
 export default function Quiz({ quiz }) {
-  if (!image) {
-    return <Spinner />
-  }
+  // const classes = useStyles();
 
   return (
     <ProjectCard 
