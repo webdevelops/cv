@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import ProjectCard from '../../../components/ProjectCard';
 import image from './store.jpg';
-// import Spinner from '../../../components/Spinner';
 
 export default function Store({ store }) {
   const linkSource = (
@@ -15,10 +14,6 @@ export default function Store({ store }) {
       Git (hosting - source here)
     </Link>
   );
-
-  // if (!image) {
-  //   return <Spinner />
-  // }
 
   return (
     <div>

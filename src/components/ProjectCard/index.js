@@ -32,11 +32,12 @@ export default function ProjectCard(props) {
         />
         <CardActionArea>
           <Link href={url} target="_blank" rel="noopener noreferrer">
-            <CardMedia
+            {/* <CardMedia
               component="img"
               src={image}
               alt={title}
-            />
+            /> */}
+            <img src={image} alt={title}/>
           </Link>
         </CardActionArea>
         <CardContent>
