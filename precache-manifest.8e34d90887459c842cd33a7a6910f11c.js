@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a3426efaaf97119ebcc8fe19b0e89e72",
+    "revision": "4752f632d82f5b3d10d97a527eb68000",
     "url": "/cv/index.html"
   },
   {
-    "revision": "7fc1a98367bb7a223e12",
+    "revision": "efa5eb0ac98b22d195ee",
     "url": "/cv/static/css/main.0e47e394.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cv/static/js/2.0f9562ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7fc1a98367bb7a223e12",
-    "url": "/cv/static/js/main.b31418b3.chunk.js"
+    "revision": "efa5eb0ac98b22d195ee",
+    "url": "/cv/static/js/main.9a1b55ec.chunk.js"
   },
   {
     "revision": "60dcb580d665ad958b7c",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cv/static/media/quiz.3455815e.jpg"
   },
   {
-    "revision": "a1b2c12cd5808c528a90b091689fa992",
-    "url": "/cv/static/media/store.a1b2c12c.jpg"
+    "revision": "7a8b52784aadfc8a3c5476309f500e98",
+    "url": "/cv/static/media/store.7a8b5278.jpg"
   }
 ]);
