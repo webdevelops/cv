@@ -4,7 +4,7 @@ import { Box, CircularProgress } from '@material-ui/core';
 export default function Spinner() {
   return (
     <Box
-      height="100vh"
+      height="90vh"
       display="flex"
       justifyContent="center"
       alignItems="center"

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AppBar, Tabs, Tab, makeStyles } from '@material-ui/core';
-// import SwipeableViews from 'react-swipeable-views';
+import SwipeableViews from 'react-swipeable-views';
 
 import { projects } from '../../data/projects';
 import TabPanel from '../../components/TabPanel';
@@ -39,9 +39,9 @@ export default function Work() {
     setValue(newValue);
   };
 
-  // const handleChangeIndex = index => {
-  //   setValue(index);
-  // };
+  const handleChangeIndex = index => {
+    setValue(index);
+  };
 
   return (
     <div className={classes.root}>
@@ -59,21 +59,23 @@ export default function Work() {
         </Tabs>
       </AppBar>
 
-      {/* <SwipeableViews */}
-      <div>
-        <TabPanel value={value} index={0} className="slidein">
+      <SwipeableViews
+        axis={'x'}
+        index={value}
+        onChangeIndex={handleChangeIndex}
+      >
+        <TabPanel value={value} index={0}>
           <Lawyer lawyer={projects.lawyer} />
         </TabPanel>
 
-        <TabPanel value={value} index={1} className="slidein">
+        <TabPanel value={value} index={1}>
           <Quiz quiz={projects.quiz} />
         </TabPanel>
 
-        <TabPanel value={value} index={2} className="slidein">
+        <TabPanel value={value} index={2}>
           <Store store={projects.store} />
         </TabPanel>
-      </div>
-      {/* </SwipeableViews> */}
+      </SwipeableViews>
       
     </div>
   );

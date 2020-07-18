@@ -15,18 +15,20 @@ export default function Store({ store }) {
     </Link>
   );
 
-  return (
-    <div>
-      <ProjectCard
-        title={store.title}
-        description={store.description}
-        url={store.url}
-        image={image}
-        techList={store.techList}
-        linkSource={linkSource}
-      />
-    </div>
-  );
+  // window.onload = function() {
+    return (
+      <div>
+        <ProjectCard
+          title={store.title}
+          description={store.description}
+          url={store.url}
+          image={image}
+          techList={store.techList}
+          linkSource={linkSource}
+        />
+      </div>
+    );
+  // }
 }
 
 Store.propTypes = {

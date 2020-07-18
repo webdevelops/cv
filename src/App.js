@@ -109,7 +109,7 @@ export default function App(props) {
         <TabPanel value={value} index={2} className="slidein">
           <Interests />
         </TabPanel>
-        <TabPanel value={value} index={3} className="slidein">
+        <TabPanel value={value} index={3}>
           <Work />
         </TabPanel>
       </div>
