@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
       display: 'none',
     },
     '& .MuiDrawer-paper': {
-      minWidth: theme.spacing(25),
+      minWidth: theme.spacing(22),
     },
   },
 }));

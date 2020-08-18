@@ -6,11 +6,10 @@ import image from './lawyer.jpg';
 import Spinner from '../../../components/Spinner';
 
 export default function Lawyer({ lawyer }) {
-
   if (!image) {
     return <Spinner />
   }
-
+  
   return (
     <ProjectCard
       title={lawyer.title}

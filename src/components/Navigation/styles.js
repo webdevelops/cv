@@ -6,9 +6,10 @@ export default makeStyles(theme => ({
   },
   navigation: {
     position: 'fixed',
+    width: '30%',
     height: '100vh',
     maxWidth: theme.spacing(35),
-    minWidth: theme.spacing(30),
+    minWidth: theme.spacing(22),
     backgroundColor: theme.palette.success.dark,
     display: 'flex',
     flexDirection: 'column',
@@ -35,9 +36,6 @@ export default makeStyles(theme => ({
     border: '8px solid #5fa23d',
   },
   [theme.breakpoints.down('sm')]: {
-    navigation: {
-      minWidth: theme.spacing(25),
-    },
     large: {
       width: theme.spacing(15),
       height: theme.spacing(15),

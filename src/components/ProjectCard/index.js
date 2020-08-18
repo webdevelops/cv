@@ -1,17 +1,8 @@
 import React from 'react';
-import { Card, CardActionArea, Link, CardHeader, CardContent, Typography, /* CardMedia */ } from '@material-ui/core';
+import { Card, CardActionArea, Link, CardHeader, CardContent, Typography, CardMedia } from '@material-ui/core';
 import PropTypes from 'prop-types';
 
 import useStyles from './styles';
-import Spinner from '../Spinner/index';
-
-window.onload = () => console.log('Loaded - window');
-
-const testImg = document.getElementsByTagName('img');
-console.log('testImg', testImg);
-
-testImg.onload = () => console.log('Loaded - image');
-
 
 export default function ProjectCard(props) {
   const { title, description, url, image, techList, linkSource } = props;
@@ -27,18 +18,6 @@ export default function ProjectCard(props) {
     })
   );
 
-  // const testImg = document.getElementsByTagName('img');
-  // console.log('testImg', testImg);
-
-  // testImg.onload = () => console.log('Loaded - image');
-
-  const test = <img src={image} alt={title} />
-
-  // if (!image) {
-  if (!test) {
-    return <Spinner />
-  }
-
   return (
     <div className={classes.root}>
       <Card raised className={classes.card}>
@@ -48,14 +27,11 @@ export default function ProjectCard(props) {
         />
         <CardActionArea>
           <Link href={url} target="_blank" rel="noopener noreferrer">
-            {/* <CardMedia
+            <CardMedia
               component="img"
               src={image}
               alt={title}
-            /> */}
-            {test}
-            {/* <img src={image} alt={title}/> */}
-            {/* <img src={image} width="900" height="500" alt={title}/> */}
+            />
           </Link>
         </CardActionArea>
         <CardContent>

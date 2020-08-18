@@ -9,7 +9,7 @@ export default function Quiz({ quiz }) {
   if (!image) {
     return <Spinner />
   }
-  
+
   return (
     <ProjectCard 
       title={quiz.title}
