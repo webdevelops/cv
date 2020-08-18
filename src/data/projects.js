@@ -21,4 +21,11 @@ export const projects = {
     image: './images/store.jpg',
     techList: ['React (Material-UI)', 'Redux', 'Firebase (database)', 'Git'],
   },
+  onlineShop: {
+    title: 'ONLINE SHOP',
+    description: 'In admin panel you can create and edit your products.',
+    url: 'https://online-shop-faba7.firebaseapp.com',
+    image: './image/onShop.jpg',
+    techList: ['Angular', 'Firebase (authentication, database, hosting)', 'Git']
+  }
 };
